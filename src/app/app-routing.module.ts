@@ -4,7 +4,7 @@ import { ListPageComponent } from './pages/list-page/list-page.component';
 import { SummaryPageComponent } from './pages/summary-page/summary-page.component';
 
 const routes: Routes = [
-  { path: '', component: SummaryPageComponent },
+  { path: 'home', component: SummaryPageComponent },
   { path: 'navigator', component: ListPageComponent }
 ];
 

@@ -1,3 +1,6 @@
+Сервис принимает JSON по заданному формату (Сейчас JSON забирается из src/app/data-test-json.ts) и распределяет информацию по страницам Summary page (где отображается количество транзакции) и List page (имя и сумма операции). 
+Сервис сделан на Angular, Typescript и Bootstrap.
+
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.

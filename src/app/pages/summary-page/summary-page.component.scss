@@ -1,0 +1,21 @@
+.open-page-text {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+.my-row {
+    max-width: 40rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.my-total {
+    border-color: gray;
+}
+.my-bottom-card {
+    max-width: 10rem;   
+}
+.my-transaction {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

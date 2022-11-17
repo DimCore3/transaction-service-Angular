@@ -1,0 +1,15 @@
+<div class="content-root">
+	<ul ngbNav #nav="ngbNav" [(activeId)]="tableTabID" class="nav-tabs justify-content-center">
+		<li [ngbNavItem]="idx" *ngFor="let data of allData; let idx = index">
+			<a class='badge-light' ngbNavLink (click)="go()">
+				<strong>
+					{{data.type}}
+				</strong>
+			</a>
+			<ng-template ngbNavContent>
+				<app-table-content [data]="data.content"></app-table-content>
+			</ng-template>
+		</li>
+	</ul>
+	<div [ngbNavOutlet]="nav" class="mt-2 text-center "></div>
+</div>

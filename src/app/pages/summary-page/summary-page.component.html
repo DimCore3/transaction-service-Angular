@@ -1,0 +1,23 @@
+<h4 class="open-page-text "> Summary page </h4>
+
+<div class="my-row container">
+    <div class="my-total card p-4 m-1">
+        <h5 class="card-title"> Welcome </h5>
+        <p class="card-text">
+            With supporting text below as a natural lead-in to additional content.
+        </p>
+        <div class="my-bottom-card container">
+            <button (click)="showTotal = !showTotal" type="button" class="btn-block btn btn-primary"> See all </button>
+        </div>
+        <div *ngIf="showTotal" class="card-footer text-muted">
+            You have {{total.total}} transactions.
+        </div>
+    </div>
+    <div class="my-transaction container d-flex">
+        <app-transaction-summary
+            *ngFor="let item of total.typeSummary"
+            [item]="item"
+        >
+        </app-transaction-summary>
+    </div>
+</div>
